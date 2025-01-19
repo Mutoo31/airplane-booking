@@ -15,7 +15,7 @@ class TransactionPassenger extends Model
         'flight_seat_id',
         'name',
         'date_of_birth',
-        'natioanlity',
+        'nationality',
     ];
 
     public function transaction()
