@@ -1,5 +1,13 @@
 @extends('layouts.app')
 
+@section('include')
+    <div id="Background-home" class="absolute w-full h-full top-0 bg-white">
+        <div class="absolute top-0 w-full h-[1020px] bg-[linear-gradient(180deg,#85C8FF_0%,#D4D1FE_47.05%,#F5F6FB_77.08%,#FFFFFF_100%)]">
+            <img src="assets/images/backgrounds/Jett Sky 2.png" class="absolute right-0 top-[147px] object-contain max-h-[481px]" alt="background image">
+        </div>
+    </div>
+@endsection
+
 @section('content')
 <main class="relative flex flex-col w-full max-w-[1280px] px-[75px] mx-auto mt-[50px] mb-[62px]">
     <h1 class="font-extrabold text-[50px] leading-[75px]">Flight Search</h1>
@@ -120,6 +128,12 @@
                         class="flex w-6 h-6 shrink-0 appearance-none outline-none rounded-lg ring-1 ring-garuda-black border border-white checked:bg-black checked:border-[5px]">
                     <img src="assets/images/icons/coffee-black.svg" alt="icon">
                     <span class="font-semibold">Heavy Meals</span>
+                </label>
+                <label class="flex items-center gap-[10px]">
+                    <input type="checkbox" name="facilities" id=""
+                        class="flex w-6 h-6 shrink-0 appearance-none outline-none rounded-lg ring-1 ring-garuda-black border border-white checked:bg-black checked:border-[5px]">
+                    <img src="assets/images/icons/snack.svg" alt="icon" width="20px">
+                    <span class="font-semibold">Snack</span>
                 </label>
             </div>
         </form>
